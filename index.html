@@ -1,0 +1,2564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG life</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivestyle.css">
+</head>
+
+<body>
+    <section>
+        <nav id="navbar">
+
+           <a href="index.html"> <img src="img/logo.png" ></a>
+
+            <div class="nav_right">
+                <div>
+                    <img src="img/signup-user.png" onclick="signup()" alt="">
+                    <span onclick="signup()">signup</span>
+                </div>
+                <div>
+                    <img src="img/login.png" onclick="login()" alt="">
+                    <span onclick="login()">login</span>
+                </div>
+            </div>
+        </nav>
+        <section id="home">
+            <div class="search_container">
+                <div class="searchelements">
+                    <h1>Happiness per Square Foot</h1>
+                    <input type="search" name="search" id="search" placeholder="Enter your city to search for PGs">
+                    <span><img src="img/search.png"></span>
+                </div>
+            </div>
+            <div class="major_city">
+                <h1>Major City</h1>
+            </div>
+            <div class="city_logo">
+                <img onclick="delhi()" src="img/delhi.png" alt="">
+                <img onclick="mumbai()" src="img/mumbai.png" alt="">
+                <img onclick="banglore()" src="img/bangalore.png" alt="">
+                <img onclick="hyderabad()" src="img/hyderabad.png" alt="">
+            </div>
+            <div class="footer">
+
+                <p onclick="delhi()">PG in Delhi</p>
+
+                <p onclick="mumbai()">PG in Mumbai</p>
+                <p onclick="banglore()">PG in Bangalore</p>
+                <p onclick="hyderabad()">PG in Hyderabad</p>
+
+                <h6>A&#169; 20xx Copyright PG Life</h6>
+                <h6><button onclick="openme()">Open participates details</button></h6>
+
+            </div>
+            <div id="me">
+                <table width="100%" border="2px solid black">
+                    <tr>
+                        <th colspan="3" style="font-size: 3rem;">
+                            <h1>Details of all participates</h1>
+                        </th>
+                        <th onclick="closeme()" style="font-size:5rem ; cursor: pointer;">
+                            <h1>&times;</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Sr No</th>
+                        <th>Name</th>
+                        <th>Register number</th>
+                        <th>Contact number</th>
+                        <th>Role</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Vipin</td>
+                        <td>VU21CSCI010003</td>
+                        <td>7988402117</td>
+                        <td>CODE JAVASCRIPT</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Priyanshu Raj</td>
+                        <td>VU21CSCI0100090</td>
+                        <td>8955948152</td>
+                        <td>CSS</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Himanshu</td>
+                        <td>VU21CSCI0100062</td>
+                        <td>8374665729</td>
+                        <td>CSS Responsive</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Gourav Kumar</td>
+                        <td>VU21CSCI010054</td>
+                        <td>6202903607</td>
+                        <td>Code HTML</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Shivam Singh</td>
+                        <td>VU21CSCI010063</td>
+                        <td>9351631579</td>
+                        <td>CSS Responsive</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Apurv Raj</td>
+                        <td>VU21CSCI010085</td>
+                        <td>6204159510</td>
+                        <td>CSS</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Sanmukh Sai</td>
+                        <td>VU21CSCI010053</td>
+                        <td>9083069108</td>
+                        <td>CSS</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Ashwin Prakash</td>
+                        <td>VU21CSCI010066</td>
+                        <td>7222915955</td>
+                        <td>Collect Resource</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Sai Krishna</td>
+                        <td>VU21CSCI010032</td>
+                        <td>7762077551</td>
+                        <td>HTML Code</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Roshan Singh Yadav</td>
+                        <td>VU21CSCI010009</td>
+                        <td>8688601351</td>
+                        <td>Code HTML</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="signup">
+            <h1>New User</h1>
+            <span id="closesignup" onclick="closesignup()">&times;</span>
+            <div>
+                <form action="" method="post">
+                    <table id="signuptabel">
+                        <tr>
+                            <td class="suplabeltd"><label for="name" class="inputs">Enter your full name</label></td>
+                            <td><input type="text" name="name" class="inputs input" id="name"
+                                    placeholder="Enter your full name"></td>
+                        </tr>
+                        <tr>
+                            <td class="suplabeltd"><label for="email" class="inputs">Email</label></td>
+                            <td><input type="email" name="email" class="inputs input" id="email" placeholder="Email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="suplabeltd"><label for="mobno" class="inputs">Mobile Number</label></td>
+                            <td><input type="tel" name="mobno" class="inputs input" id="mobno"
+                                    placeholder="Mobile Number"></td>
+                        </tr>
+                        <tr>
+                            <td class="suplabeltd"><label for="pass" class="inputs">Create a password</label></td>
+                            <td><input type="password" name="pass" class="inputs input" id="pass"
+                                    placeholder="Create a password"></td>
+                        </tr>
+                        <tr>
+                            <td class="suplabeltd"><label for="conpass" class="inputs">Confirm password</label></td>
+                            <td><input type="password" name="repass" class="inputs input" id="repass"
+                                    placeholder="Confirm Password"></td>
+                        </tr>
+                        <tr>
+                            <td class="suplabeltd"><input type="reset" class="inputs sinpbtn" value="Reset"></td>
+                            <td><input type="submit" class="inputs sinpbtn" value="Submit"></td>
+                        </tr>
+                    </table>
+                </form>
+
+
+
+            </div>
+
+        </section>
+        <section id="login">
+            <h1>Login</h1>
+            <h3>Enter Your Details</h3>
+            <span id="closelogin" onclick="closelogin()">&times;</span>
+            <div>
+                <form action="" method="post">
+                    <table id="logintabel">
+
+                        <tr>
+                            <td class="lilabeltd"><label for="email" class="inputs">Email</label></td>
+                            <td><input type="email" name="email" class="inputs input" id="email" placeholder="Email">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="lilabeltd"><label for="pass" class="inputs">Create a password</label></td>
+                            <td><input type="password" name="pass" class="inputs input" id="pass"
+                                    placeholder="Create a password"></td>
+                        </tr>
+                        <tr>
+                            <td class="lilabeltd"><input type="reset" class="inputs linpbtn" value="Reset"></td>
+                            <td><input type="submit" class="inputs linpbtn" value="login"></td>
+                        </tr>
+                    </table>
+                </form>
+
+
+
+            </div>
+
+        </section>
+    </section>
+    <div id="booknowform" class="booknowform">
+        <div class="booktop">
+            <h1>Enter Your Details</h1>
+            <h5 onclick="closebooknow()">&times;</h5>
+        </div>
+        <form action="" method="get">
+            <table width="100%">
+                <tr>
+                    <td><label class="bookinp" for="name">Enter Your Name</label></td>
+                    <td><input class="bookinp" type="text" name="name" required id="name" placeholder="Enter Your Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="bookinp" for="email">Enter Your Email</label></td>
+                    <td><input class="bookinp" type="email" name="email" placeholder="Enter Your Email" required
+                            id="email"></td>
+                </tr>
+                <tr>
+                    <td><label class="bookinp" for="mobno">Enter Your Contact Number</label></td>
+                    <td><input class="bookinp" type="tel" name="mobno" id="mobno"
+                            placeholder="Enter Your Contact Number" required></td>
+                </tr>
+                <tr>
+                    <td><label class="bookinp" for="profesion">I am a</label></td>
+                    <td><input class="bookinp" type="radio" name="profrssion" required id="profession"
+                            value="student"><span class="bookinp">Student</span>
+                        <input class="bookinp" type="radio" name="profrssion" required id="profession"
+                            value="student"><span class="bookinp">Working
+                            Professional</span>
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td><label class="bookinp" for="identity">Select An Identity</label></td>
+                    <td><select class="bookinp" required name="identity" id="identity">
+                            <option class="bookinp" required value="aadharcard">Aadhar Card</option>
+                            <option class="bookinp" required value="dl">Driving Licence</option>
+                            <option class="bookinp" required value="passport">Passport</option>
+                            <option class="bookinp" required value="vc">Voting Card</option>
+                            <option class="bookinp" required value="other">Other</option>
+                        </select>
+                        <input type="text" required class="bookinp" name="idno" id="idno"
+                            placeholder="Enter Your Selected ID No. ">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label class="bookinp" for="time">Select Move-In date</label></td>
+                    <td><input class="bookinp" required type="date" name="date" id="date"></td>
+                </tr>
+                <tr>
+                    <td><label class="bookinp" for="occupancy">Select occupancy</label></td>
+                    <td><select class="bookinp" required name="occupancy" id="occupancy">
+                            <option class="bookinp" required value="1">Single</option>
+                            <option class="bookinp" required value="2">Double</option>
+                            <option class="bookinp" required value="3">Triple</option>
+                            <option class="bookinp" required value="4">Quadruple</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><input class="bookinp" type="reset" value="Reset"></td>
+                    <td><input class="bookinp" type="submit" value="Book Now"></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    <section id="delhiList">
+        <div class="gotohome">
+            <h2>PGs In Delhi</h2>
+            <h1><a href="index.html">&times;</a></h1>
+        </div>
+        <div id="delhipg1">
+            <div class="pg_container" id="saraswatidelhipg">
+                <div class="img">
+                    <img src="img/properties/1/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>Saraswati Paying Guest</h1>
+                    <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/male.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 9000/-</h1>
+                        <p>per month</p>
+                        <button onclick="opensaraswatidelhipg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="opensaraswatidelhipg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="closesaraswatidelhipg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/1/1.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/1/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/1/3.jpg" width="200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1 style="color: rgb(52, 38, 38); text-align:center; font-size:xx-large; margin: 0px 0px s; ">About
+                    </h1>
+                    <p style="display: flex;
+                            width: 80%;
+                            text-align: center;
+                            color: rgb(52, 38, 38);
+                            font-size: 1.2rem;
+                            margin: 0 10%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="delhipg2">
+            <div class="pg_container" id="satyaniketendelhipg">
+                <div class="img">
+                    <img src="img/properties/2/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>Satya Niketen</h1>
+                    <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/male.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 10000/-</h1>
+                        <p>per month</p>
+                        <button onclick="opensatyaniketendelhipg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="opensatyaniketendelhipg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="closesatyaniketendelhipg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/2/1.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/2/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/2/3.jpg" width="200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1 style="color: rgb(52, 38, 38); text-align:center; font-size:xx-large; margin: 0px 0px s; ">About
+                    </h1>
+                    <p style="display: flex;
+                            width: 80%;
+                            text-align: center;
+                            color: rgb(52, 38, 38);
+                            font-size: 1.2rem;
+                            margin: 0 10%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="delhipg3">
+            <div class="pg_container" id="ajantahousedelhipg">
+                <div class="img">
+                    <img src="img/properties/3/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>Ajanta House</h1>
+                    <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/male.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 9500/-</h1>
+                        <p>per month</p>
+                        <button onclick="openajantahousedelhipg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="openajantahousedelhipg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="closeajantahousedelhipg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/3/1.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/3/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/3/3.jpg" width="200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1 style="color: rgb(52, 38, 38); text-align:center; font-size:xx-large; margin: 0px 0px s; ">About
+                    </h1>
+                    <p style="display: flex;
+                            width: 80%;
+                            text-align: center;
+                            color: rgb(52, 38, 38);
+                            font-size: 1.2rem;
+                            margin: 0 10%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer">
+
+            <p onclick="delhi()">PG in Delhi</p>
+
+            <p onclick="mumbai()">PG in Mumbai</p>
+            <p onclick="banglore()">PG in Bangalore</p>
+            <p onclick="hyderabad()">PG in Hyderabad</p>
+
+            <h6>A&#169; 20xx Copyright PG Life</h6>
+
+        </div>
+    </section>
+    <section id="mumbaiList">
+        <div class="gotohome">
+            <h2>PGs In Mumbai</h2>
+            <h1><a href="index.html">&times;</a></h1>
+        </div>
+        <div id="mumbaipg4">
+            <div class="pg_container" id="xyzmumbaipg">
+                <div class="img">
+                    <img src="img/properties/4/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starhalf.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>XYZ Guest</h1>
+                    <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/unisex.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 10,500/-</h1>
+                        <p>per month</p>
+                        <button onclick="openxyzmumbaipg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="openxyzmumbaipg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="closexyzmumbaipg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/4/1.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/4/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/4/3.jpg" width="200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1 style="color: rgb(52, 38, 38); text-align:center; font-size:xx-large; margin: 0px 0px s; ">About
+                    </h1>
+                    <p style="display: flex;
+                            width: 80%;
+                            text-align: center;
+                            color: rgb(52, 38, 38);
+                            font-size: 1.2rem;
+                            margin: 0 10%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="mumbaipg5">
+            <div class="pg_container" id="abcmumbaipg">
+                <div class="img">
+                    <img src="img/properties/5/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starblank.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>ABC Guest</h1>
+                    <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/male.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 9,000/-</h1>
+                        <p>per month</p>
+                        <button onclick="openabcmumbaipg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="openabcmumbaipg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="closeabcmumbaipg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/5/1.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/5/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/5/3.jpg" width="200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1 style="color: rgb(52, 38, 38); text-align:center; font-size:xx-large; margin: 0px 0px s; ">About
+                    </h1>
+                    <p style="display: flex;
+                            width: 80%;
+                            text-align: center;
+                            color: rgb(52, 38, 38);
+                            font-size: 1.2rem;
+                            margin: 0 10%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer">
+
+            <p onclick="delhi()">PG in Delhi</p>
+
+            <p onclick="mumbai()">PG in Mumbai</p>
+            <p onclick="banglore()">PG in Bangalore</p>
+            <p onclick="hyderabad()">PG in Hyderabad</p>
+
+            <h6>A&#169; 20xx Copyright PG Life</h6>
+
+        </div>
+    </section>
+    <section id="bangloreList">
+        <div class="gotohome">
+            <h2>PGs In Banglore</h2>
+            <h1><a href="index.html">&times;</a></h1>
+        </div>
+        <div id="banglorepg6">
+            <div class="pg_container" id="123banglorepg">
+                <div class="img">
+                    <img src="img/properties/6/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starhalf.png" alt="">
+                            <img src="img/starblank.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>123 Paying Guest</h1>
+                    <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/male.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 11,500/-</h1>
+                        <p>per month</p>
+                        <button onclick="open123banglorepg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="open123banglorepg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="close123banglorepg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/6/1.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/6/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/6/3.jpg" width=" 200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1>About
+                    </h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="banglorepg7">
+            <div class="pg_container" id="789banglorepg">
+                <div class="img">
+                    <img src="img/properties/7/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>789 Paying Guest</h1>
+                    <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/female.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 12,000/-</h1>
+                        <p>per month</p>
+                        <button onclick="open789banglorepg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="open789banglorepg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="close789banglorepg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/7/1.jpg width=" 200px" height="150px" border="2px solid black">
+                    <img src="img/properties/7/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/7/3.jpg" width="200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1 style="color: rgb(52, 38, 38); text-align:center; font-size:xx-large; margin: 0px 0px s; ">About
+                    </h1>
+                    <p style="display: flex;
+                            width: 80%;
+                            text-align: center;
+                            color: rgb(52, 38, 38);
+                            font-size: 1.2rem;
+                            margin: 0 10%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="banglorepg8">
+            <div class="pg_container" id="pqrbanglorepg">
+                <div class="img">
+                    <img src="img/properties/8/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>PQR Paying Guest</h1>
+                    <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/male.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 9000/-</h1>
+                        <p>per month</p>
+                        <button onclick="openpqrbanglorepg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="openpqrbanglorepg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="closepqrbanglorepg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/8/1.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/8/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/8/3.jpg" width="200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1 style="color: rgb(52, 38, 38); text-align:center; font-size:xx-large; margin: 0px 0px s; ">About
+                    </h1>
+                    <p style="display: flex;
+                            width: 80%;
+                            text-align: center;
+                            color: rgb(52, 38, 38);
+                            font-size: 1.2rem;
+                            margin: 0 10%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="banglorepg9">
+            <div class="pg_container" id="567banglorepg">
+                <div class="img">
+                    <img src="img/properties/9/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>567 Paying Guest</h1>
+                    <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/male.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 8500/-</h1>
+                        <p>per month</p>
+                        <button onclick="open567banglorepg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="open567banglorepg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="close567banglorepg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/9/1.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/9/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/9/3.jpg" width="200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1 style="color: rgb(52, 38, 38); text-align:center; font-size:xx-large; margin: 0px 0px s; ">About
+                    </h1>
+                    <p style="display: flex;
+                            width: 80%;
+                            text-align: center;
+                            color: rgb(52, 38, 38);
+                            font-size: 1.2rem;
+                            margin: 0 10%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer">
+
+            <p onclick="delhi()">PG in Delhi</p>
+
+            <p onclick="mumbai()">PG in Mumbai</p>
+            <p onclick="banglore()">PG in Bangalore</p>
+            <p onclick="hyderabad()">PG in Hyderabad</p>
+
+            <h6>A&#169; 20xx Copyright PG Life</h6>
+
+        </div>
+    </section>
+    <section id="hyderabadList">
+        <div class="gotohome">
+            <h2>PGs In Hyderabad</h2>
+            <h1><a href="index.html">&times;</a></h1>
+        </div>
+        <div id="hyderabadpg10">
+            <div class="pg_container" id="a2zhyderabadpg">
+                <div class="img">
+                    <img src="img/properties/10/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>A2Z Paying Guest</h1>
+                    <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/male.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 8900/-</h1>
+                        <p>per month</p>
+                        <button onclick="opena2zhyderabadpg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="opena2zhyderabadpg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="closea2zhyderabadpg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/10/1.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/10/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/10/3.jpg" width="200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1 style="color: rgb(52, 38, 38); text-align:center; font-size:xx-large; margin: 0px 0px s; ">About
+                    </h1>
+                    <p style="display: flex;
+                            width: 80%;
+                            text-align: center;
+                            color: rgb(52, 38, 38);
+                            font-size: 1.2rem;
+                            margin: 0 10%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="hyderabadpg11">
+            <div class="pg_container" id="ghihyderabadpg">
+                <div class="img">
+                    <img src="img/properties/11/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>G H I Paying Guest</h1>
+                    <p><span>
+                            <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    </p>
+                    <img src="img/male.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 13000/-</h1>
+                        <p>per month</p>
+                        <button onclick="openghihyderabadpg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="openghihyderabadpg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="closeghihyderabadpg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/11/1.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/11/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/11/3.jpg" width="200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1 style="color: rgb(52, 38, 38); text-align:center; font-size:xx-large; margin: 0px 0px s; ">About
+                    </h1>
+                    <p style="display: flex;
+                            width: 80%;
+                            text-align: center;
+                            color: rgb(52, 38, 38);
+                            font-size: 1.2rem;
+                            margin: 0 10%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="hyderabadpg12">
+            <div class="pg_container" id="mrfhyderabadpg">
+                <div class="img">
+                    <img src="img/properties/12/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>M R F Paying Guest</h1>
+                    <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/male.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 12000/-</h1>
+                        <p>per month</p>
+                        <button onclick="openmrfhyderabadpg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="openmrfhyderabadpg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="closemrfhyderabadpg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/12/1.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/12/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/12/3.jpg" width="200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1 style="color: rgb(52, 38, 38); text-align:center; font-size:xx-large; margin: 0px 0px s; ">About
+                    </h1>
+                    <p style="display: flex;
+                            width: 80%;
+                            text-align: center;
+                            color: rgb(52, 38, 38);
+                            font-size: 1.2rem;
+                            margin: 0 10%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="hyderabadpg13">
+            <div class="pg_container" id="rtohyderabadpg">
+                <div class="img">
+                    <img src="img/properties/13/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>R T O Paying Guest</h1>
+                    <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/male.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 9800/-</h1>
+                        <p>per month</p>
+                        <button onclick="openrtohyderabadpg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="openrtohyderabadpg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="closertohyderabadpg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/13/1.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/13/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/13/3.jpg" width="200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1 style="color: rgb(52, 38, 38); text-align:center; font-size:xx-large; margin: 0px 0px s; ">About
+                    </h1>
+                    <p style="display: flex;
+                            width: 80%;
+                            text-align: center;
+                            color: rgb(52, 38, 38);
+                            font-size: 1.2rem;
+                            margin: 0 10%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="hyderabadpg14">
+            <div class="pg_container" id="denhyderabadpg">
+                <div class="img">
+                    <img src="img/properties/14/1.jpg" width="250px">
+                </div>
+                <div class="about_pg">
+                    <div class="review">
+                        <div class="rating">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+                            <img src="img/starfill.png" alt="">
+
+                        </div>
+                        <div class="like">
+                            <img src="img/heartblank.png" alt="">
+
+                        </div>
+                    </div>
+                    <h1>DEN Paying Guest</h1>
+                    <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                    <img src="img/male.png" width="40px"><br>
+                    <div class="rate">
+                        <h1>Rs 8000/-</h1>
+                        <p>per month</p>
+                        <button onclick="opendenhyderabadpg()">View</button>
+                    </div>
+                </div>
+            </div>
+            <div id="opendenhyderabadpg" class="openpgdetails">
+                <div class="toponabtpg">
+                    <div><button onclick="booknow()" id="booknow">Book Now</button></div>
+                    <div class="closebtn"><button onclick="closedenhyderabadpg()">&times;</button></div>
+                </div>
+                <div class="imageofpg">
+                    <img src="img/properties/14/1.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/14/2.jpg" width="200px" height="150px" border="2px solid black">
+                    <img src="img/properties/14/3.jpg" width="200px" height="150px" border="2px solid black">
+                </div>
+                <div class="aboutpgdetails">
+                    <h1 style="color: rgb(52, 38, 38); text-align:center; font-size:xx-large; margin: 0px 0px s; ">About
+                    </h1>
+                    <p style="display: flex;
+                            width: 80%;
+                            text-align: center;
+                            color: rgb(52, 38, 38);
+                            font-size: 1.2rem;
+                            margin: 0 10%">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, veritatis!
+                        Deserunt natus dolores praesentium eum error unde ipsum. Natus nobis pariatur repudiandae eum
+                        alias tempora quo vero reiciendis obcaecati molestias.</p>
+                    <div class="location" style="text-align: center;">
+                        <p><span><img src="img/location.png" width="25px"></span>Lorem ipsum dolor sit amet.</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="belowslideshow">
+                    <div class="aminities">
+                        <h1>Amenities</h1>
+                        <table>
+                            <tr>
+                                <td><img src="img/amenities/ac.svg"> <span>AC</span></td>
+                                <td><img src="img/amenities/bed.svg"> <span>Bed</span></td>
+                                <td><img src="img/amenities/cctv.svg"> <span>CCTV</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/dining.svg"> <span>Dining</span></td>
+                                <td><img src="img/amenities/fireext.svg"> <span>Fire ext</span></td>
+                                <td><img src="img/amenities/geyser.svg"> <span>Geyser</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/lift.svg"> <span>Lift</span></td>
+                                <td><img src="img/amenities/parking.svg"> <span>Parking</span></td>
+                                <td><img src="img/amenities/powerbackup.svg"> <span>Power Backup</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/rowater.svg"> <span>RO water</span></td>
+                                <td><img src="img/amenities/tv.svg"> <span>Tv</span></td>
+                                <td><img src="img/amenities/washingmachine.svg"> <span>Washing Machine</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/amenities/wifi.svg"> <span>WiFi</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="requestcallback">
+                        <h1>Request Callback</h1>
+                        <form action="" method="get">
+                            <table>
+                                <tr>
+                                    <td><label class="reqinp" for="name">Name</label></td>
+                                    <td><input class="reqinp" required type="text" name="name"
+                                            placeholder="ENTER YOUR NAME" id="name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="email">Email</label></td>
+                                    <td><input class="reqinp" type="email" name="email" placeholder="ENTER YOUR EMAIL"
+                                            id="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <labe class="reqinp" l for="profession">I am a</label>
+                                    </td>
+                                    <td><input class="reqinp" required type="radio" name="pro" id="pro"
+                                            value="workingprofessional"><span class="reqinp">Working Professional</span>
+                                        <input class="reqinp" type="radio" required name="pro" id="pro"
+                                            value="student"><span class="reqinp">Student</span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><label class="reqinp" for="occupancy">Select occupancy</label>
+                                        <select class="reqinp" required name="occupancy" id="occupancy">
+                                            <option class="reqinp" value="1">Single</option>
+                                            <option class="reqinp" value="2">Double</option>
+                                            <option class="reqinp" value="3">Triple</option>
+                                            <option class="reqinp" value="4">Quadruple</option>
+                                        </select>
+                                    </td>
+                                    <td><label class="reqinp" for="gender">Gender</label>
+                                        <select class="reqinp" required name="gender" id="gender">
+                                            <option class="reqinp" value="male">Male</option>
+                                            <option class="reqinp" value="Female">Female</option>
+                                            <option class="reqinp" value="Other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class="reqinp" for="mobno">Contact Number</label></td>
+                                    <td><input class="reqinp" type="tel" name="contactnumber"
+                                            placeholder="CONTACT NUMBER" required id="contactnumber"></td>
+                                </tr>
+                                <tr>
+                                    <td><span><img src="img/whatsapp.png" width="25px"></span><label class="reqinp"
+                                            for="ctwa">Contact Through Whatsapp</label></td>
+                                    <td><input type="checkbox" name="cntwapp" id="cntwapp"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="timofcnt" class="reqinp">Time of Contact</label></td>
+                                    <td><input type="datetime-local" name="timofcnt" class="reqinp" required
+                                            id="timofcnt"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="reqinp reqinpbtn" type="reset" value="Reset"></td>
+                                    <td><input class="reqinp reqinpbtn" type="submit" value="Schedule Now"></td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer">
+
+            <p onclick="delhi()">PG in Delhi</p>
+
+            <p onclick="mumbai()">PG in Mumbai</p>
+            <p onclick="banglore()">PG in Bangalore</p>
+            <p onclick="hyderabad()">PG in Hyderabad</p>
+
+            <h6>A&#169; 20xx Copyright PG Life</h6>
+
+        </div>
+    </section>
+
+    <section id="helpme">
+        <div class="help">
+            <div class="hmimg">
+                <img src="img/helpme.png" alt="">
+            </div>
+            <div class="hmhead">
+                <h1>Contact Us?</h1>
+            </div>
+        
+        <div class="contact">
+            <p class="contactelements"><a href="mailto:dgarv23@gmail.com"><img src="img/mail.png">Mail</a></p>
+            <p class="contactelements"><a href="tel:+917988402117"><img src="img/call.png">Call</a></p>
+            <p class="contactelements"><a href="https://wa.me/+917988402117"><img src="img/whatsapp.png">Whatsapp</a></p>
+            <p class="contactelements"><a href="https://www.facebook.com/vipindagar07/"><img src="img/fb.png">Facebook</a></p>
+            <p class="contactelements"><a href="https://twitter.com/Vipindagar07"><img src="img/twitter.png">Twitter</a></p>
+            <p class="contactelements"><a href="www.linkedin.com/in/vipindagar07"><img src="img/linkedin.png">Linked In</a></p>
+        </div>
+    </div>
+    </section>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

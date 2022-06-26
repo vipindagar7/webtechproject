@@ -1,0 +1,351 @@
+
+    
+@media screen and (max-width: 600px){
+
+    nav img{
+        width: 80px;
+    }
+
+   
+    .nav_right img {  
+        width: 15px;
+        margin: 0px 5px;
+    }
+    .nav_right span{
+        font-size: 10px;
+        margin: 10px 0px;
+    }
+  
+.footer p{
+    display: block;
+}
+
+.city_logo {
+    display: block;
+    text-align: -webkit-center;
+    
+}
+.city_logo img{
+    width: 100px;
+    display: block;
+}
+.city_name{
+    display: none;
+}
+.search_container h1{
+    font-size: large;
+    margin: 0px 0px 20px 0px;
+}
+.search_container input{
+    width: 200px;
+    height: auto;
+}
+
+.major_city h1{
+    font-size: large;
+}
+.search_container span img {
+    width: 22px;
+    background-color: gray;
+    position: absolute;}
+
+.search_container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background: url(img/bg.png); 
+}
+.searchelements {
+    margin: 0px;
+    text-align: justify;
+}
+
+/* pg details */
+.about_pg h1{
+    font-size: 60%
+}
+.img img{
+    width: 100%;
+}
+.about_pg p{
+    width: 100%;
+    font-size: 60%;
+}
+#delhiList{
+    margin: 10% 5% 0% 5%;
+    display: none;
+}
+#mumbaiList{
+    margin: 10% 5% 0% 5%;
+    display: none;
+}
+#bangloreList{
+    margin: 10% 5% 0% 5%;
+    display: none;
+}
+#hyderabadList{
+    margin: 10% 5% 0% 5%;
+    display: none;
+}
+
+.rate h1{
+    font-size: 1rem;
+}
+.rate p{
+    width: fit-content;
+}
+.rate button {
+    margin: 0px 0px 5px 30px;
+    width: 40px;
+}
+.rating{
+    width: 120px;
+}
+.like img {
+    width: 15px;
+    margin-left: 0px;
+    
+}
+.rating img {
+    width: 10px;
+}
+/* opened pg details */
+.aboutpgdetails h1{
+    font-size: 1px;
+}
+.belowslideshow{
+    display: block;
+}
+.aminities {
+    width: 100%;
+}
+.requestcallback {
+    width: 100%;
+}
+#booknow{
+    font-size: 1rem;
+}
+.imageofpg {
+    width: 72%;
+    position: relative;
+    overflow-x: scroll;
+    left: 14%;
+    right: 14%;
+}
+.closebtn {
+    position: absolute;
+    border: none;
+    top: -1.5%;
+    right: 1%;
+}
+
+.requestcallback h1{
+    font-size: 1rem;
+}
+.requestcallback td img{
+    width: 10px;
+}
+.aminities td img{
+    width: 15px;
+}
+.aminities td span{
+    font-size: .5rem;
+}
+.reqinp {
+    font-size: .5rem;
+}
+.location img{
+    width: 20px;
+}
+.aboutpgdetails h1{
+    font-size: .2rem;
+}
+.booknowform {
+
+    width: 90%;
+    position: absolute;
+    overflow: scroll;
+    top: 5%;
+    left: 5%;
+}
+.booknowform table label{
+    display: none;
+}
+.booktop h5 {
+    left: 0%;
+    
+}
+.bookinp {
+    font-size: .5rem;
+}
+#signup {
+    width: 100%;
+    right: 5%;
+    position: absolute;
+    border: 2px solid black;
+}
+.suplabeltd{
+    display: none;
+}
+.inputs {
+    font-size: small;
+    margin: 10px 30px;
+
+}
+
+
+#closesignup {
+    font-size: 2.5rem;
+    position: absolute;
+    left: 89%;
+    top: -2%;
+}
+#login {
+   
+    width: 100%;
+    right: 5%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border: 2px solid black;
+}
+#login h1, #login h3 {
+    font-size: small;
+}
+.lilabeltd{
+    display: none;
+}
+#closelogin {
+    font-size: 2.5rem;
+    position: absolute;
+    left: 89%;
+    top: -2%;
+}
+#me {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    width: 100%;
+
+}
+#me h1{
+    font-size: 1rem;
+}
+#me th,#me td{
+    font-size: 8px;
+}
+.hmhead{display: none;}
+.hmimg img {
+    width: 25px;
+    border-radius: 25px;
+}
+.contact {
+    position: fixed;
+    right: 1%;
+    bottom: 1%;}
+    .contactelements img {
+        width:25px;
+    }
+
+    
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 1470px){
+.rate button {
+    
+    margin: 0px 0px 5px 100px;
+    width: 60px;
+}
+.like img {
+    width: 20px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+}
+@media screen and (max-width: 1100px){
+.rate button {
+    
+    margin: 0px 0px 5px 50px;
+    width: 60px;
+}
+.like img {
+    width: 20px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+#delhiList{
+    margin: 10% 5% 0% 5%;
+    display: none;
+}
+#mumbaiList{
+    margin: 10% 5% 0% 5%;
+    display: none;
+}
+#bangloreList{
+    margin: 10% 5% 0% 5%;
+    display: none;
+}
+#hyderabadList{
+    margin: 10% 5% 0% 5%;
+    display: none;
+}
+.hmhead h1{
+    display: none;
+}
+.hmimg img {
+    width: 50px;
+    border-radius: 50px;
+}
+.contact {
+    position: fixed;
+    right: 1%;
+    bottom: 1%;}
+    .contactelements img {
+        width:25px;
+    }
+
+    .bookinp {
+        font-size: 1rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* /900px */
+@media screen and (max-width: 900px){
+/* for forms */
+/* signup */
+#signuptabel label{
+    display: none;
+}
+#signup{
+    position: absolute;
+    overflow: scroll;
+}
+.inputs{
+    font-size: 1rem;
+
+}
+#closesignup {
+    font-size: 5rem;
+    position: absolute;
+    left: 70%;
+    top: -23px;
+}
+}

@@ -1,0 +1,492 @@
+*{
+    margin: 0%;
+}
+
+
+nav{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    height: auto;
+    position: fixed;
+}
+nav img{
+    width: 200px;
+}
+#navbar{
+    margin: 0px;
+    background-color: white;
+}
+.nav_right{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.nav_right img {
+    cursor: pointer;
+    width: 30px;
+    margin: 0px 10px;
+    color: rgb(106, 103, 103);
+}
+.nav_right span{
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin: 20px 0px;
+    color: rgb(88, 82, 82);
+}
+.search_container{
+    padding: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    background: url(img/bg.png);
+}
+.searchelements{
+    margin: 100px 12px;
+    text-align: center;
+}
+.search_container h1{
+    color: rgb(242, 100, 12);
+    font-size: xx-large;
+    margin: 0px 0px 20px 0px
+}
+.search_container input{
+    width: 400px;
+    height: 40px;}
+.search_container span img{
+    width: 40px;
+    background-color: gray;
+
+    margin: 0px 0px -16px -4px
+}
+.major_city h1{
+    text-align: center;
+    color: rgb(77, 73, 73);
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.city_logo{
+    display: flex;
+    justify-content: space-around;
+}
+.city_logo img{
+    width: 200px;
+    
+    border-radius: 100px;
+    cursor: pointer;
+
+}
+.city_logo img:hover{
+    transform: scale(0.8);
+    box-shadow: 5px 5px silver;
+
+}
+
+.footer{
+    text-align: center;
+    background-color: rgb(18, 17, 17);
+    width: 100%;
+}
+.footer p{
+    display:inline-flex;
+   margin: 0px 20px;
+   color: rgb(216, 213, 213);
+}
+.footer p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer h6{
+    color: rgb(108, 103, 103);
+    margin: 10px;
+}
+.gotohome{
+    text-align: end;
+}
+.gotohome a:hover{
+    color: black;
+}
+.gotohome a{
+    text-decoration: none;
+    font-size: 2rem;
+}
+#delhiList{
+    margin: 100px 20% 0% 20%;
+    display: none;
+}
+#mumbaiList{
+    margin: 100px 20% 0% 20%;
+    display: none;
+}
+#bangloreList{
+    margin: 100px 20% 0% 20%;
+    display: none;
+}
+#hyderabadList{
+    margin: 100px 20% 0% 20%;
+    display: none;
+}
+.pg_container{
+    border: 2px solid black;
+    width: auto;
+    margin: 20px 10px;
+    font-family: sans-serif;
+    
+}
+.pg_container:hover{
+    box-shadow: 5px 5px 5px 10px #888888;
+    box-sizing: border-box;
+}
+.img,.about_pg{
+    display: inline-block;
+}
+.imageofpg{
+    display: flex;
+    justify-content: center;
+}
+.aboutpgdetails p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: rgb(52, 38, 38);
+}
+.aboutpgdetails h1{
+    color: rgb(52, 38, 38); text-align:center; font-size:  2rem; margin: 0px 0px;
+}
+.review{
+    width: 100%;
+    display:flex;
+    position:relative;
+    display: contents;
+    bottom: 30px;
+}
+#interested{
+    width: 10px;
+margin: 0px 260px;
+}
+.rate{
+    display: flex;
+}
+.rate button{
+    background-color: aqua;
+    color: white;
+    border: none;
+    margin: 0px 0px 5px 328px;
+    width: 80px;
+}
+.rate button:hover{
+    background-color: rgb(25, 159, 159);
+}
+.rate button:focus{
+    background-color: rgb(103, 246, 246);
+}
+.rating img{
+    width: 20px;
+    cursor: pointer;
+}
+.like img{
+    width: 20px;
+    margin-left: 400px;
+    cursor: pointer;
+}
+#signup{
+    background: linear-gradient(purple, navy);
+
+    width: 60%;
+    right: 20%;
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    border: 4px solid black;
+    display: none;
+}
+#signup h1{
+    text-align: center;
+    color: blue;
+    font-size:xx-large;
+}
+#signuptabel{
+    width: 100%;
+    text-align: center;
+}
+#signuptabel td{
+    width: 40%;
+}
+
+.inputs{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    margin: 20px 60px 20px 60px;
+    background: none;
+  
+}
+.input{
+    border-top: 0px solid black;
+    border-left: 0px solid black;
+    border-bottom: 1px solid black;
+    border-right: 0px solid black;
+}
+.input:focus, .input:hover{
+    border-top: 0px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 0px solid black;
+}
+.sinpbtn{
+    background: rgb(192, 187, 178);
+    border: none;
+    color: brown;
+
+}
+.sinpbtn:hover{
+    background-color: rgb(122, 122, 122);
+    font-weight: bolder;
+}
+#closesignup{
+    font-size: 5rem;
+    position: absolute;
+    left: 95%;
+    top: -23px;
+
+}
+#login{
+    background: linear-gradient(purple, navy);
+    width: 60%;
+    right: 20%;
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    border: 4px solid black;
+    display: none;
+}
+#login h1, #login h3{
+    text-align: center;
+    color: blue;
+    font-size:xx-large;
+}
+#logintabel{
+    width: 100%;
+    text-align: center;
+}
+#logintabel td{
+    width: 40%;
+}
+.inputs{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    margin: 20px 60px 20px 60px;
+    background: none;
+  
+}
+.input{
+    border-top: 0px solid black;
+    border-left: 0px solid black;
+    border-bottom: 1px solid black;
+    border-right: 0px solid black;
+}
+.input:focus, .input:hover{
+    border-top: 0px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 0px solid black;
+}
+.linpbtn{
+    background: orange;
+    border: none;
+    color: brown;
+
+}
+.linpbtn:hover{
+    background-color: rgb(245, 129, 12);
+    font-weight: bolder;
+}
+#closelogin{
+    font-size: 5rem;
+    position: absolute;
+    left: 95%;
+    top: -23px;
+
+}
+#me{
+    display:none;
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    background:radial-gradient(rgb(0, 255, 115),rgb(192, 230, 255));
+}
+
+/* to open pg details */
+.openpgdetails{
+    overflow-x: scroll;
+        height: auto;
+display: none;
+position: absolute;
+top: 1%;
+left: 5%;
+width: 90%;
+background-color: rgb(135, 135, 210);
+}
+.closebtn{
+    position: absolute;
+    border: none;
+    top: 0%;
+    right: 5%;
+
+}
+.closebtn button{
+ color: black;
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+ font-size: 3rem;
+}
+.closebtn button:hover{
+    text-decoration: underline;
+}
+.belowslideshow{
+    display: flex;
+}
+.aminities{
+    width: 60%;
+}
+.aminities h1 , .requestcallback h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+    color: brown;
+
+}
+.aminities table{
+    width: 100%;
+    text-align: center;
+}
+.aminities td, .aminities span{
+   color: rgba(23, 20, 20, 0.903);
+}
+.requestcallback{
+    width: 40%;
+}
+.requestcallback table{
+    width: 100%;
+    text-align: center;
+}
+.reqinp{
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.reqinpbtn{
+    background: radial-gradient(rgb(240, 235, 235) , rgb(67, 56, 57));
+    border: none;
+}
+.reqinpbtn:hover{
+    background: radial-gradient(rgb(70, 47, 51),rgb(208, 197, 197));
+}
+.toponabtpg{
+    display: flex;
+    width: 100%;
+}
+#booknow{
+    display: block;
+    position: relative;
+    top: 10%;
+    left: 20%;
+    font-size: 2rem;
+    color: blue;
+    background-color: navajowhite;
+    cursor: pointer;
+    border: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#booknow:hover{
+    background-color: blue;
+    color: navajowhite;
+}
+.booknowform{
+    display: none;
+    width: 60%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    border: 2px solid black;
+    background: radial-gradient(rgb(140, 0, 255),rgb(192, 214, 255));
+}
+.booktop{
+    display: flex;
+}
+.booktop h5{
+    width: max-content;
+    text-align: end;
+    font-size: 3rem;
+    position: relative;
+    
+    left: 6%;
+    cursor: pointer;
+}
+.booktop h5:hover{
+    text-decoration: underline;
+}
+.booktop h1{
+    width: 90%;
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    color: blue;
+}
+.bookinp{
+    color: rgba(41, 41, 112, 0.9);
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+.help{
+    border: 4px solid rgb(52, 47, 47);
+    border-radius: 30px;
+    width: max-content;
+    display:flex ;
+    background-color: gray;
+}
+
+.hmimg img{
+    width: 50px;
+    border-radius: 50px;
+}
+.hmhead h1{
+    font-size: 1rem;
+    color: rgb(53, 46, 46);
+    padding: 25px 10px;
+}
+.contactelements{
+    border: 2px solid black;
+    width: 120px;
+    border: 20px;
+}
+.contactelements img{
+    width: 50px;
+}
+.contactelements a{
+    text-decoration: none;
+    color: rgb(53, 46, 46);
+
+}
+#helpme{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.contact{
+    display: none;
+    position: fixed;
+    right: 50px;
+    bottom: 85px;
+    background-color: wheat;
+}
+
+/* hover drop up for contact */
+.help:hover .contact{
+    display: block;
+}
+.help:focus .contact{
+    display: block;
+}
